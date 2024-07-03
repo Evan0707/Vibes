@@ -1,0 +1,77 @@
+
+.RegisterLogo{
+    width: 200px;
+    height: 92px;
+    margin-bottom: 20px;
+}
+
+
+.formLog_Sign{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input{
+    background-color: #262626;
+    border: none;
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 16px;
+}
+form .signButton{
+    background-color: #8F00FF;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 90px;
+    margin-top: 20px;
+}
+form .signButtonLoading{
+    background-color: #6900ba;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 90px;
+    margin-top: 20px;
+}
+.ll{
+    width: 20px;
+    height: 20px;
+    border: #a66ac9 solid 5px;
+    border-radius: 50%;
+    border-top: #fff solid 5px;
+    animation: spine infinite 1s;
+    animation-timing-function:linear;
+}
+
+@keyframes spine {
+    100%{transform: rotate(360deg);}
+}
+.useInfo{
+    color: #ff3b3b;
+    display: flex;
+    align-items: center;
+    margin: 5px 0 0 0;
+}
+.infoIcon{
+    color: #ff3b3b;
+    margin-right: 5px;
+}
+.pseudoInput{
+    margin: 15px 0 0 0;
+}
+.pseudoSec{
+    margin-bottom: 15px;
+}
+

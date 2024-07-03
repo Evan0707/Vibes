@@ -1,0 +1,57 @@
+
+
+.PopUp{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50;
+    z-index: 8;
+    position: absolute;
+    background-color: #ff3b3b;
+    backdrop-filter:blur(28px);
+    display: flex;
+    align-items: center;
+    padding: 3px 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    animation-name: showw;
+    animation-delay: 4500ms;
+    animation-duration: 600ms;
+}
+.ErrorPopUpIcon{
+    z-index: 9;
+    color: #ff3b3b;
+    font-size: 24px;
+}
+.bgIconErrPop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.ClosePopUp{
+    color: gray;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+.ClosePopUp:hover{
+    color: #fff;
+}
+.square{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ff3b3b;
+    border-radius: 50%;
+    right: 0;
+}
+@keyframes showw {
+    100%{transform: translate(-50%,-200px);}
+}

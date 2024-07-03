@@ -1,0 +1,70 @@
+.PicPreferences{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.PicTxt{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 50%;
+    user-select: none;
+    touch-action: none;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.PicPreferences:hover .PicTxt{
+    opacity: 1;
+}
+.PreferencesSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principalInfo{
+    display: flex;
+}
+.principale-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.prefInput{
+    background-color: #262626;
+    border: none;
+    padding: 8px;
+    color: #ffff;
+    outline: none;
+    border-radius: 10px;
+    width: 50vw;
+    resize: none;
+}
+.savePref, .cancelPref{
+    background-color:#8F00FF;
+    color:#ffff;
+    border:none;
+    padding: 6px 20px;
+    border-radius: 10px;
+    font-family: 16px;
+    position: relative;
+}
+.circleLoad{
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    border: #8F00FF solid 2px;
+    border-top: solid #ffff 2px;
+    border-radius: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}

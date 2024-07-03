@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+::-webkit-scrollbar{
+    background-color: #101012;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #262626;
+    border-radius: 10px;
+}
+
+
+body{
+    font-family: 'inter';
+}
+.content form{
+    position: relative;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.InputSection{
+    margin: 30px 0;
+}
+.taags{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45vw;
+}
+.InputTitle{
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 6px;
+
+}
+.InputSection input,.InputSection textarea{
+    padding: 8px;
+    color: #fff;
+    background-color: #262626;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    width: 45vw;
+}
+.InputSection textarea{
+    height: 100px;
+}
+.TagWid{
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 5px;
+}
+.TagWid button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.TagWid button:hover{
+    color: red;
+}
+.TagWid p{
+    margin: 0;
+}
+.addTagsInput{
+    display: flex;
+    align-items: center;
+    background-color: #262626;
+    border-radius: 10px;
+    padding: 5px;
+    width: 45vw;
+}
+.addTagsInput input{
+    margin: 0;
+}
+.addTagsInput p {
+    margin: 0;
+    font-size: 12px;
+    color: #878787;
+}
+.addTagsInput button{
+    color: #fff;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+.addTagsInput button:hover{
+    color: #8F00FF;
+}
+.ImageInputSection{
+    display: flex;
+    align-items: center;
+}
+.img1{
+    background-color: #262626;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14vw;
+    height: 7.8vw;
+    margin-right: 8px;
+}
+.img2{
+    width: 14vw;
+    height: 7.8vw;
+    background-color: #262626;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.uploadButton,.uploadButtonDel{
+    background-color: #8F00FF;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 40px;
+    margin: 0 5px;
+}
+.uploadButtonDel{
+    background-color: #878787;
+}
+.CloudIcon{
+    font-size: 65px;
+}
+.closeIcon{
+    font-size: 20px;
+    color: #fff;
+}
+.closeIcon:hover{
+    color: red;
+}
+.softFrame{
+    display: flex;
+}
+.softSelect{
+    position: absolute;
+    left: 0;
+    background-color: #19191b;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.gridSoft{
+    display: flex;
+}

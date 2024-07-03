@@ -1,0 +1,214 @@
+.ViewArtWork{
+    padding: 20px 50px;
+}
+.title{
+    font-size: 30px;
+    margin: 0;
+    font-weight: 700;
+}
+.imgaccount{
+    background-color: red;
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+}
+.imgSaction{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    position: relative;
+    height: 40vw;
+    width: 70vw;
+    border-radius: 10px;
+
+}
+.imgSaction .noActive{
+    background-color: #262626;
+    background-size: cover;
+    border-radius: 10px;
+    /* height: 100%;
+    width: 100%; */
+}
+.imgCount{
+    position: absolute;
+    background-color: #262626;
+    border-radius: 30px;
+    font-size: 14px;
+    right: 8px;
+    top: 0px;
+    padding: 3px 6px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.imgSaction:hover .imgCount{
+    opacity: 1;
+}
+
+.accountInfo{
+    display: flex;
+    align-items: center;
+}
+.createBy{
+    color: #878787;
+    margin-left: 6px;
+}
+.accountInfo .true,.accountInfo .false{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 28px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+.accountInfo .true{
+    background-color: #fff;
+    color: black;
+}
+.accountInfo .false{
+    background-color: #8F00FF;
+    color: #fff;
+}
+
+.descPart{
+    margin-top: 20px;
+}
+.sectionTitle{
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+.like{
+    color: #fff;
+    font-size: 36px;
+}
+.liked{
+    color: #8F00FF;
+    font-size: 36px;
+}
+.imgSaction{
+    display: flex;
+    flex-direction: column;
+}
+.likeBox{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.counter{
+    margin: 0 6px;
+}
+.PostCommand{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.descTxt{
+    margin-left: 10px;
+}
+.like:hover{
+    color: #8F00FF;
+    cursor: pointer;
+    transform: scale(120%);
+    transition: all 0.3s;
+}
+.like:active{
+    animation: likeAnimation linear;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes likeAnimation{
+    0%{transform: scale(120%);}
+    50%{transform: scale(70%);}
+    100%{transform: scale(120%);}
+}
+.ii{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+.chevron,.chevron2{
+    position: absolute;
+    z-index: 8;
+    font-size: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.chevron{
+    left: 10px;
+}
+.chevron2{
+    right: 10px;
+}
+.chevron:hover, .chevron2:hover{
+    background-color: #111111bb;
+    border-radius: 50%;
+}
+.commentPart{
+    background-color: #242424;
+    /* height: 400px; */
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 10px;
+    width: 100%;
+}
+.commentWid{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: start;
+}
+.commentprof{
+    background-color: red;
+    height: 34px;
+    width: 34px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.commentHead{
+    display: flex;
+    flex-direction: column;
+}
+.commentContent{
+    display: flex;
+    margin: 6px 0 0 6px;
+}
+.commentHead .createBy{
+    margin: 0 0 0 6px;
+}
+.sandButton{
+    background-color:#ffff;
+    border:none;
+    height:32px;
+    width:32px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.messageSender{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+.inputWidget{
+    background-color: #262626;
+    border: none;
+    border-radius:10px;
+    font-size: 16px;
+    color: #ffff;
+    height:28px;
+    padding: 4px 4px 4px 10px;
+}

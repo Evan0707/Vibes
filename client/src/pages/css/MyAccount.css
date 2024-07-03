@@ -1,0 +1,124 @@
+.ProfilImage{
+    background-color: red;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+.infoUserArt{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.TopPart{
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    margin: 0;
+}
+.ProfStats{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.folowBox{
+    display: flex;
+    align-items: center;
+}
+.folowBox button{
+    background-color: #8F00FF;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 5px 15px;
+}
+.folowBox img{
+    background-color: rgb(115, 0, 255);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+.Desc{
+    padding: 0 50px;
+}
+.specWid{
+    background-color: #262626;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 0;
+}
+.spec{
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+.bio span{
+    color: #8F00FF;
+}
+.thumbaile{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+.cont:hover .hoverInfo{
+    opacity: 1;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.cont{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    display: flex;
+    margin: 4px;
+}
+.hoverInfo{
+    position: absolute;
+    background: linear-gradient(0deg,#0a0a0a,#2b2b2b00);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.ArtTitle{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 5px;
+    color: #fff;
+}
+.date{
+    margin: 0;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.Gallery{
+    display: flex;
+    padding: 20px 46px;
+}
+.follower{
+    margin-right: 5px;
+}
+.following{
+    margin-left: 15px;
+}

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'inter';
+    background-color: #101012;
+    color: #fff;
+    position: relative;
+    height: 100vh;
+}
+
+.PB{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.left,.right{
+    display: flex;
+    align-items: center;
+}
+.left img{
+    width: 45px;
+    height: 45px;
+}
+.ee{
+    color: white;
+    width: 26px;
+    height: 26px;
+    margin: 0 6px;
+}
+.ss{
+    color: white;
+    width: 22px;
+    height: 22px;margin-left: 5px;
+}
+
+.InputBox input{
+    background-color: #262626;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    width: 15vw;
+}
+
+.InputBox{
+    display: flex;
+    align-items: center;
+    background-color: #262626;
+    padding: 4px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.cc{
+    color: white;
+    width: 26px;
+    height: 26px;
+}
+.MoreAccount{padding: 0;
+background: none;
+border: none;
+}
+.profimg{
+    background-color: red;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: #101012 4px solid;
+    box-sizing: border-box;
+}
+.profBox{
+    display: flex;
+    align-items: center;
+}
+.AccountSection{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #262626;
+    border-radius: 50px;
+    padding-right: 5px;
+    margin-left: 15px;
+}
+.AccountPopUpFalse{
+    top: 60px;
+    right   : 0;
+    position: absolute;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+.AccountPopUp{
+    top: 60px;
+    right   : 0;
+    position: absolute;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.buttonPopUp{
+    background: transparent;
+    border: none;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+h6{
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+.buttonPopUp:hover{
+    color: #8F00FF;
+}
+.parameters{
+    background-color: #101012;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    border-radius: 10px;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.framePara{
+    z-index: 4;
+    background-color: #0000009c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+.parametersTitle{
+    background-color: #101012;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+}
+.left_Parameters{
+    width: 200px;
+    background-color: #262626;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.parameterSectionBox{
+    padding: 0;
+    background-color: #262626;
+    margin: 0;
+    border-radius: 0 10px 0 10px;
+    list-style: none;
+    font-size: 16px;
+}
+.parameterSectionBox *{
+    padding: 20px 0;
+    padding-left: 40px;
+    cursor: pointer;
+}
+.parameterSectionBox *:hover{
+    background-color: #101012;
+}
+.closeParam{
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+}
+.closeParam:hover{
+    color: red;
+}
+
+.TopParaSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.paraContainer textarea{
+    background-color: #262626;
+    border: none;
+    resize: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.inputParam{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+.paraContainer{
+    position: relative;
+    width: 100%;
+    height: 290px;
+    overflow-y: scroll;
+}
+.right-Parameters-ProfilInfo{
+    position: relative;
+    width: 500px;
+    padding: 10px;
+    height: 400px;
+    box-sizing: border-box;
+}
+.paraContainer p{
+    margin: 5px;
+}
+.save-delSection{
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.save-delSection button:last-child{
+    background-color: #8F00FF;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 25px;
+}
+.save-delSection button:first-child{
+    background-color: #6e6e6e;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 25px;
+    margin-right: 10px;
+}
+.logButton{
+    background-color: #8F00FF;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.liksInput{
+    background-color: #262626;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.i{
+    font-size: 30px;
+}
+.autoLinks{
+    font-size: 14px;
+    color: #6e6e6e;
+}

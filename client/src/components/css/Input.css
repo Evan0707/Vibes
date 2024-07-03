@@ -1,0 +1,9 @@
+.inputWidget{
+    background-color: #262626;
+    border: none;
+    border-radius:10px;
+    font-size: 16px;
+    color: #ffff;
+    height:28px;
+    padding: 4px 4px 4px 10px;
+}
