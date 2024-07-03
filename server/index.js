@@ -19,7 +19,7 @@ app.use(express.json({
     limit:'10mb'
 }))
 app.use(cors({
-    origin:["https://vibes-client-o81or7bmg-evan0707s-projects.vercel.app/"],
+    origin:["vibes-client.vercel.app/"],
     methods:["POST","GET"],
     credentials:true
 }))
