@@ -15,6 +15,17 @@ require("dotenv").config()
 
 
 const app = express()
+
+app.use((req, res, next) => {
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://vibes-cli.vercel.app"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS,CONNECT,TRACE"
+  );
+
 app.use(express.json({
     limit:'10mb'
 }))
