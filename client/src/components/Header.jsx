@@ -40,7 +40,7 @@ const Header = () => {
   },[])
 
   // useEffect(()=>{
-  //   axios.get('http://localhost:4000/')
+  //   axios.get('https://vibes-drab.vercel.app/')
   //   .then(res=>{
   //     if(res.data.Status === "Success"){
   //       setUserId(res.data.dataUser._id)
@@ -55,7 +55,7 @@ const Header = () => {
 
   function UpdateAccount(){
     console.log(BioPara);
-    axios.post('http://localhost:4000/account/update',{name:namePara,bio:BioPara,id:userId})
+    axios.post('https://vibes-drab.vercel.app/account/update',{name:namePara,bio:BioPara,id:userId})
     .then(res=>{
       
     })
