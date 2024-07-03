@@ -18,7 +18,7 @@ const Login = () => {
     const handleSubmit =async(e)=>{
         setLoading(true)
         e.preventDefault();
-        await axios.post("http://localhost:4000/login",{email,pass})
+        await axios.post("vibes-drab.vercel.app/login",{email,pass})
         .then(result => {console.log(result)
             if(result.data === "No Account"){
                 setMessage(result.data)

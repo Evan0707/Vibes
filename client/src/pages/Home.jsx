@@ -10,13 +10,13 @@ const Home = () => {
   axios.defaults.withCredentials=true
 
   useEffect(()=>{
-    axios.post('https://vibes-avfaqdaro-evan0707s-projects.vercel.app/randomPost')
+    axios.post('vibes-drab.vercel.app/randomPost')
         .then(result=>{
           setPostArray(result.data)
           console.log(result.data);
         })
 
-    axios.get('https://vibes-avfaqdaro-evan0707s-projects.vercel.app/')
+    axios.get('vibes-drab.vercel.app/')
     .then(res=>{
       if(res.data.Status === "Success"){
         setAuth(true)
