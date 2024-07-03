@@ -55,7 +55,7 @@ const Header = () => {
 
   function UpdateAccount(){
     console.log(BioPara);
-    axios.post('https://vibes-drab.vercel.app/account/update',{name:namePara,bio:BioPara,id:userId})
+    axios.post('https://vibes-serv.vercel.app/account/update',{name:namePara,bio:BioPara,id:userId})
     .then(res=>{
       
     })
