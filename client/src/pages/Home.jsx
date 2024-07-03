@@ -10,13 +10,13 @@ const Home = () => {
   axios.defaults.withCredentials=true
 
   useEffect(()=>{
-    axios.post('http://localhost:4000/post/randomPost')
+    axios.post('https://vibes-drab.vercel.app/post/randomPost')
         .then(result=>{
           setPostArray(result.data)
           console.log(result.data);
         })
 
-    axios.get('http://localhost:4000/')
+    axios.get('https://vibes-drab.vercel.app/')
     .then(res=>{
       if(res.data.Status === "Success"){
         setAuth(true)
@@ -30,10 +30,10 @@ const Home = () => {
     
   },[])
 
-  const recipe=()=>{
-    fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772')
-    .then(res=>console.log(res.json()))
-  }
+  // const recipe=()=>{
+  //   fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772')
+  //   .then(res=>console.log(res.json()))
+  // }
 
   return (
     <div>
@@ -61,7 +61,7 @@ const Home = () => {
           //   </a>
         ))}
       </div>
-      <button onClick={()=>recipe()}>Hello</button>
+      {/* <button onClick={()=>recipe()}>Hello</button> */}
     </div>
 
   )
