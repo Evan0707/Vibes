@@ -23,7 +23,7 @@ const Header = () => {
 
   axios.defaults.withCredentials=true
   useEffect(()=>{
-    axios.get('vibes-drab.vercel.app/')
+    axios.get('https://vibes-drab.vercel.app/')
     .then(res=>{
       if(res.data.Status === "Success"){
         setAuth(true)
